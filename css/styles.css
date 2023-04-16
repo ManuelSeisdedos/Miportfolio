@@ -25,7 +25,7 @@ body {
 }
 .portfolio .container {
   width: 80vw;
-  max-width: 100%;
+  max-width: 100vw;
   height: max-content;
   margin: 0 auto; 
   display: flex;
