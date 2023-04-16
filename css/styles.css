@@ -115,7 +115,7 @@ body {
   justify-content: space-between;
   align-items: start;
 }
-.about p {
+.about h4 {
   font-size: x-large;
   
 }
@@ -271,7 +271,7 @@ span {
 }
 
 
-.about p {
+.about h4 {
   margin-bottom: 1em;
 }
 
