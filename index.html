@@ -16,9 +16,9 @@
       <div class="brand">  <h2>M<span>S</span> </h2></div>
       <ul class="menu">
         <li ><a href="#" class="active">Inicio</a></li>
-        <li><a href="#">Sobre mi</a></li>
-        <li><a href="#">Portafolio</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#sobremi">Sobre mi</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -28,7 +28,10 @@
       <h1>
          <span> Manuel Seisdedos </span>
       </h1>    
-      <p> Full Stack Developer</p>
+      <p> Hola! Soy Manuel Seisdedos, Full Stack Developer.</p>
+      <p>        
+        Les presento mi portafolio</p>
+        <p>Gracias por su visita! </p>
       <a download href="/CV Manuel Seisdedos.pdf">
         <button class="download-cv" download> Descargar CV</button> 
       </a>
@@ -36,16 +39,16 @@
   </main>
 </div>
 
-<div class="about">
+<div id="sobremi" class="about">
   <div class="tecnologias">
-    <div ><img src="img/javascript2.png" alt="sobre Manuel Seisdedos"></div>
-    <div ><img src="img/react3.png" alt="sobre Manuel Seisdedos"></div>
-    <div ><img src="img/redux.png" alt="sobre Manuel Seisdedos"></div>
-    <div ><img src="img/pngwing.com.png" alt="sobre Manuel Seisdedos"></div>
-    <div ><img src="img/pngegg.png" alt="sobre Manuel Seisdedos"></div>
-    <div ><img src="img/mongodb.png" alt="sobre Manuel Seisdedos"></div>
+    <div class="tec-img" ><img src="img/javascript2.png" alt="sobre Manuel Seisdedos"></div>
+    <div class="tec-img"><img src="img/react3.png" alt="sobre Manuel Seisdedos"></div>
+    <div class="tec-img"><img src="img/redux.png" alt="sobre Manuel Seisdedos"></div>
+    <div class="tec-img"><img src="img/pngwing.com.png" alt="sobre Manuel Seisdedos"></div>
+    <div class="tec-img"><img src="img/pngegg.png" alt="sobre Manuel Seisdedos"></div>
+    <div class="tec-img"><img src="img/mongodb.png" alt="sobre Manuel Seisdedos"></div>
   </div>
-  <div class="about-info">
+  <div  class="about-info">
     <h2>Sobre mi</h2>
     <div class="divider"></div>
     <p>
@@ -65,12 +68,12 @@
   </div>
 </div>
 
-<div class="portfolio">
+<div id="portafolio" class="portfolio">
   <div class="portfolio-headings">
     <h2>Mi Portafolio</h2>
     <div class="divider2"></div>
   </div>
-<div class="proyectos">
+  <div class="proyectos">
     <div class="container">
       <div class="card">
         <div class="card_img"></div>
@@ -106,13 +109,13 @@
           <h2>Wikidex Pokemon</h2>
         </div>      
         <div class="project-links">
-          <a href="https://pi-pokemon-umber.vercel.app/" target="_blank">
+          <a href="https://github.com/ManuelSeisdedos/PI-Pokemon" target="_blank">
             <i class="fa-brands fa-github"></i>
           </a>       
-          <a href="">
+          <a href="https://github.com/ManuelSeisdedos/PI-Pokemon-back">
             <i class="fa-solid fa-code"></i>
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/posts/manuel-seisdedos-216a56254_buenos-d%C3%A1s-es-de-mi-agrado-presentarles-activity-7052308379590955010-FkWQ?utm_source=share&utm_medium=member_desktop">
             <i class="fa-brands fa-linkedin"></i></i>
           </a>
           
@@ -125,13 +128,11 @@
          
         </button>
       </div>
-    </div>
-  
-   
+    </div>   
   </div>
 </div>
 
-<div class="contact-section">
+<div id="contacto" class="contact-section">
   <div class="contact-headings">
     <h1>Contacto</h1>
     <div class="divider"></div>
@@ -145,7 +146,7 @@
         <input type="email" placeholder="Email">
       </div>
 
-       <textarea placeholder="Escriba su mensaje...">     
+       <textarea placeholder="Escriba su mensaje aqui...">     
        </textarea>
        <button type="submit" class="btn-submit">
         Enviar mensaje
