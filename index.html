@@ -1,174 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon"  type="image/png" href="/img/MS.png">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio</title>
-  <script src="https://kit.fontawesome.com/ad5b6507be.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://kit.fontawesome.com/ad5b6507be.css" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
 </head>
 <body>
- <div class="wrapper">
-  <header>
-    
-    <nav class="navbar">
+  <nav>
       <div class="brand">  <h2>M<span>S</span> </h2></div>
       <ul class="menu">
-        <li ><a href="#" class="active">Inicio</a></li>
-        <li><a href="#sobremi">Sobre mi</a></li>
-        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#proyectos">Portafolio</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
-  </header>
+  <main>
 
-  <main class="main">
-    <div class="info-content">
-      <h1>
-         <span> Manuel Seisdedos </span>
-      </h1>    
-      <p> Hola! Soy Manuel Seisdedos, Full Stack Developer.</p>
-      <p>        
-        Les presento mi portafolio</p>
-        <p>Gracias por su visita! </p>
-      <a download href="/CV Manuel Seisdedos.pdf">
-        <button class="download-cv" download> Descargar CV</button> 
+    <div class="informacion">
+      <div class="presentacion">
+        <h1>
+          <span> Manuel Seisdedos </span>
+        </h1>    
+        <br>
+       <p> Hola! Soy Manuel Seisdedos, Full Stack Developer.</p>
+       <p>        
+         Les presento mi portafolio</p>
+         <p>Gracias por su visita! </p>
+
+      </div>
+      <div class="sobremi">
+        <div  class="about">
+          <h2>Sobre mi</h2>
+          <div class="divider"></div>
+          <h4>
+          Me gusta el aprendizaje constante y el trabajo en equipo,
+          creo que para alcanzar grandes objetivos es clave un grupo fuertemente relacionado y
+          capacitado es un punto fundamental.      
+          </h4>
+          <br>
+          <h4>
+            Uno de mis pasatiempos es la resolución de acertijos, en su mayoria matematicos. 
+            De estos me gusta tener que pensar las diferentes soluciones posibles y cual de ellas, 
+            dependiendo el problema en cuestion, es el mas efectivo.
+            </h4>
+        </div>
+      </div>
+    </div>
+    <div class="cv">
+      <a download href="Curriculum Manuel Seisdedos.pdf">
+        <button class="download-cv" download> Descargar Curriculum</button> 
       </a>
     </div>
   </main>
-</div>
 
-<div id="sobremi" class="about">
+  <section class="proyectos" >
+
+    <h1>Proyectos</h1>
+
+    <div class="cards-section">
+      <div class="card-proyecto">
+        <img src="img/barbershop.png" alt="">
+        <h2>Barbershop</h2>
+        <p>Saca turnos para tu corte de pelo y llevate los productos necesarios
+          para dejarlo reluciente.
+        </p>
+        <div class="social-media-card">
+          <a href="https://github.com/ManuelSeisdedos/barbershop" target="_blank"><img src="iconos/Github-icon.svg" alt="Github code"></a>
+          <a href="https://barbershop-front-deploy.vercel.app/" target="_blank"><img src="iconos/Globe-icon.png" alt="Website"></a>
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7084541332391608320/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7084541332391608320%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29" target="_blank"><img src="iconos/Linkedin-icon.svg" alt="Github code"></a>
+        </div>
+    </div>
+
+    <div class="card-proyecto">
+      <img src="img/pokebola.png" alt="">
+      <h2>Pokedex</h2>
+      <p>Informacion exclusiva de los Pokemons de la primera generación
+      </p>
+      <div class="social-media-card">
+        <a href="https://github.com/ManuelSeisdedos/PI-Pokemon" target="_blank"><img src="iconos/Github-icon.svg" alt="Github code"></a>
+        <a href="pi-pokemon-umber.vercel.app" target="_blank"><img src="iconos/Globe-icon.png" alt="Website"></a>
+        <a href="https://www.linkedin.com/posts/manuel-seisdedos-216a56254_buenos-d%C3%A1s-es-de-mi-agrado-presentarles-activity-7052308379590955010-FkWQ?utm_source=share&utm_medium=member_desktop" target="_blank"><img src="iconos/Linkedin-icon.svg" alt="Github code"></a>
+      </div>
+    </div>
+
+    <div class="card-proyecto">
+      <img src="img/tateti.png" alt="">
+      <h2>Tres en linea</h2>
+      <p>¡Diviertete con tus amigos jugando una partida de Tres en linea!
+      </p>
+      <div class="social-media-card">
+        <a href="https://github.com/ManuelSeisdedos/Ta-Te-Ti" target="_blank"><img src="iconos/Github-icon.svg" alt="Github code"></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7102074222549594112/" target="_blank"><img src="iconos/Linkedin-icon.svg" alt="Github code"></a>
+      </div>
+    </div>
+
+    </div>
+  </section>
   <div class="tecnologias">
-    <div class="tec-img" ><img src="img/javascript2.png" alt="sobre Manuel Seisdedos"></div>
-    <div class="tec-img"><img src="img/react3.png" alt="sobre Manuel Seisdedos"></div>
-    <div class="tec-img"><img src="img/redux.png" alt="sobre Manuel Seisdedos"></div>
-    <div class="tec-img"><img src="img/pngwing.com.png" alt="sobre Manuel Seisdedos"></div>
-    <div class="tec-img"><img src="img/pngegg.png" alt="sobre Manuel Seisdedos"></div>
-    <div class="tec-img"><img src="img/mongodb.png" alt="sobre Manuel Seisdedos"></div>
+    <img src="img/javascript2.png" alt="Javascript">
+    <img src="img/react3.png" alt="React">
+    <img src="img/mongodb.png" alt="MongoDB">
+    <img src="img/redux.png" alt="Redux">
+    <img src="img/nodejs.png" alt="NodeJs">
+    <img src="img/postresql.png" alt="PostreSQL">
+    <img src="img/socketiopng.png" alt="SocketIO">
+    <img src="img/docker.png" alt="Docker">
   </div>
-  <div  class="about-info">
-    <h2>Sobre mi</h2>
-    <div class="divider"></div>
-    <h4>
-    Me gusta el aprendizaje constante y el trabajo en equipo,
-    creo que para alcanzar grandes objetivos es clave un grupo fuertemente relacionado y
-    capacitado es un punto fundamental.      
-    </h4>
-    <h4>
-      Uno de mis pasatiempos es la resolución de acertijos, en su mayoria matematicos. 
-      De estos me gusta tener que pensar las diferentes soluciones posibles y cual de ellas, 
-      dependiendo el problema en cuestion, es el mas efectivo.
-      
-    </h4>
-  <a download href="/CV Manuel Seisdedos.pdf">
-        <button class="download-cv" download> Leer más </button> 
-      </a>
-  </div>
-</div>
-
-<div id="portafolio" class="portfolio">
-  <div class="portfolio-headings">
-    <h2>Mi Portafolio</h2>
-    <div class="divider2"></div>
-  </div>
-  <div class="proyectos">
-    <div class="container">
-      <div class="card">
-        <div class="card_img"></div>
-        <div class="card_tittle">
-          <h2>Henry Barbershop</h2>
-        </div>      
-        <div class="project-links">
-          <a href="https://github.com/ManuelSeisdedos/barbershop" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>       
-          <a href="https://barbershop-front-deploy.vercel.app/" target="_blank">
-            <i class="fa-solid fa-code"></i>
-          </a>
-          <a href="">
-            <i class="fa-brands fa-linkedin"></i></i>
-          </a>
-          
-        </div>
-       
-        <button class="project-details-button download-cv">
-          <a href="https://barbershop-front-deploy.vercel.app/"> 
-          Detalles de Proyecto
-          </a>
-         
-        </button>
+  <section class="experiencias">
+  <h1>Experiencias</h1>
+  <div class="container-experiencias">
+    <div class="cartas">
+      <div class="card-front">
+        <img src="iconos/microservicios.png" alt="">
+         <h2>Microservicios</h2>
+         <p>Desarrollo de una API de microservicios para agilizar la 
+          comunicación entre componentes de manera eficiente y escalable.</p>
+      </div>
+      <div class="card-back">
+        <a href="https://github.com/ManuelSeisdedos/Microservicios" target="_blank">
+          <img src="iconos/Github-icon.svg">
+        </a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7088267539872411648/" target="_blank">
+          <img src="iconos/Linkedin-icon.svg">
+        </a>
       </div>
     </div>
+
+    <div class="cartas">
+      <div class="card-front">
+        <img src="iconos/calculadora.png" alt="">
+         <h2>Calculadora</h2>
+         <p>Construcción de una calculadora en JavaScript para realizar operaciones
+           matemáticas de manera interactiva y sencilla en el navegador.</p>
+      </div>
+      <div class="card-back">
+        <a href="https://github.com/ManuelSeisdedos/Calculadora" target="_blank">
+          <img src="iconos/Github-icon.svg">
+        </a>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section class="contacto">
+    <div class="formulario">
+      <h1>Contactame</h1>
+        <form id="formulario-contacto">
+          <div class="info-contacto">
+            <input type="text" id="nombre" required placeholder="Nombre">
+            <input type="text" id="apellido" required placeholder="Apellido">
+          </div>
+        <input type="text" id="mensaje">
+        <input type="submit" value="Enviar" id="submit">
+    </form>
+    </div>
+    <div class="info-personal">
+      <h1>Manuel Seisdedos</h1>
+      <h4>Fullstack Developer</h4>
+      <div class="redes-personales">
+        <a href="https://github.com/ManuelSeisdedos">
+          <img src="iconos/Github-icon.svg" alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/manuel-seisdedos-216a56254/">
+          <img src="iconos/Linkedin-color.png" alt="">
+        </a>
+        <a href="https://www.instagram.com/manuelseisdedos/">
+          <img src="iconos/instagram.png" alt="">
+        </a>
+      </div>
   
-    <div class="container">
-      <div class="card">
-        <div class="card_img2"></div>
-        <div class="card_tittle">
-          <h2>Wikidex Pokemon</h2>
-        </div>      
-        <div class="project-links">
-          <a href="https://github.com/ManuelSeisdedos/PI-Pokemon" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>       
-          <a href="https://github.com/ManuelSeisdedos/PI-Pokemon-back">
-            <i class="fa-solid fa-code"></i>
-          </a>
-          <a href="https://www.linkedin.com/posts/manuel-seisdedos-216a56254_buenos-d%C3%A1s-es-de-mi-agrado-presentarles-activity-7052308379590955010-FkWQ?utm_source=share&utm_medium=member_desktop">
-            <i class="fa-brands fa-linkedin"></i></i>
-          </a>
-          
-        </div>
-       
-        <button class="project-details-button download-cv">
-          <a href="https://pi-pokemon-umber.vercel.app/"> 
-          Detalles de Proyecto
-          </a>
-         
-        </button>
-      </div>
-    </div>   
-  </div>
-</div>
-
-<div id="contacto" class="contact-section">
-  <div class="contact-headings">
-    <h1>Contacto</h1>
-    <div class="divider"></div>
-  </div>
- 
-  <div class="container-contact">
-    <div class="contact-form">
-      <form class="form">
-        <div class="row">        
-          <input type="text" placeholder="Nombre" >
-        <input type="email" placeholder="Email">
-      </div>
-
-       <textarea placeholder="Escriba su mensaje aqui...">     
-       </textarea>
-       <button type="submit" class="btn-submit">
-        Enviar mensaje
-      </button>
-      </form>
     </div>
+  </section>
 
-  </div>
-</div>
-
-<footer class="footer">
-  <div class="footer-content">
-    <h2> Manuel Seisdedos </h2>
-  </div>
-  <h5> Full Stack Developer </h5>
-    <div class="social-network">
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-linkedin"></i>
-      <i class="fa-brands fa-github"></i>
-    </div>
-</footer>  
+  <footer>
+  </footer>
+  
 </body>
 </html>
