@@ -19,7 +19,65 @@
 
 /* Estilos para móviles */
 @media only screen and (max-width: 768px) {
+    nav {
+        height: 8vh;
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: bold;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    
+    .menu {
+        width: 100%;
+        justify-content: flex-end;
+    }
 
+    .menu a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0px 20px;
+    }
+
+.informacion {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0px 20px;
+    font-weight: bold;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.cv {
+    display: flex;
+    justify-content: center;
+}
+
+.download-cv {
+
+  padding: 20px 40px;
+  background-color:var(--primary-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+  box-shadow: 1px 3px 11px 5px rgba(188,218,55, .2);
+}
 }
 
 /* Estilos para tablets */
