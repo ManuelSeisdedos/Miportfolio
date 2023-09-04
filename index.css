@@ -744,7 +744,392 @@ img {
 
 @media only screen and (min-width: 992px) and (max-width: 1023px) {
 
+    nav {
+        height: 8vh;
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: bold;
+    }
+    
+    .brand {
+        padding-left: 20px;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    
+    .menu {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    .menu a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0px 20px;
+    }
+    
+    .tecnologias {
+        margin-top: 30px;
+        background-color: white;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    
+    .tecnologias img {
+    
+        width: 100px;
+        height: 100px;
+        filter: grayscale(100%);
+        transition: transform 0.3s, filter 0.3s;
+    }
+    
+    .tecnologias  img:hover{
+        transform: scale(1.1);
+        filter: grayscale(0%);
+        cursor: pointer;
+    }
+    
+    .informacion {
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .informacion span {
+        color: var(--primary-color);
+      
+    }
+    
+    .about h2 {
+        color: var(--primary-color);
+        padding-bottom: 10px;
+        text-decoration: underline;
+    }
+    
+    .presentacion {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+    
+    
+    .about {
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    
+    .cv {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .download-cv {
+    
+      padding: 20px 40px;
+      background-color:var(--primary-color);
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      margin-top: 30px;
+      cursor: pointer;
+      box-shadow: 1px 3px 11px 5px rgba(188,218,55, .2);
+    }
+    
+    .download-cv:hover {
+        transition: ease-in;
+        box-shadow: none;
+        background-color: white;
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color)
+      }
+    
+    .proyectos {
+        width: 100%;
+        height: 100vh;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .proyectos h1, .experiencias h1 {
+        font-size: 50px;
+        color: var(--primary-color);
+        text-decoration: underline;
+    }
+    .cards-section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .card-proyecto {
+        background-color: white;
+        border: solid var(--primary-color) 1px;
+        width: 30vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        border-radius: 7px;
+        box-shadow: 0 2px 2px ;
+        transition: all 0.2s;
+    }
+    
+    .card-proyecto:hover {
+        transform: translateY(-12px);
+        transform: translateX(-10px);
+        box-shadow: 0 12px 16px var(--primary-color)
+    }
+    
+    .card-proyecto img {
+        padding-left: 10%;
+        width: 80%;
+        height: 50%; 
+        
+    }
+    
+    .card-proyecto h2 {
+       text-decoration: underline;
+    }
+    
+    .card-proyecto p {
+        text-align: center;
+        font-weight: bold;
+        width: 90%;
+        padding-left: 5%;
+    }
+    
+    
+    .social-media-card {
+        display: flex;
+        flex-direction: row;
+        height: 9vh;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    
+    .social-media-card img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.3s;
+    }
+    
+    .social-media-card img:hover {
+        transform: scale(1.1);
+    }
+    
+    .experiencias {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .container-experiencias {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .cartas {
+        position: relative;
+        width: 30vw;
+        height: 50vh;
+        color: black;
+        display: grid;
+        place-items: center; 
+        
+    }
+    
+    .card-front {  
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(30px);
+        box-shadow: #4c53bd;
+        transform: rotateY(0deg);
+        box-shadow: #4c53bd 0px 0px  8px;
+        backface-visibility: hidden;
+        background: linear-gradient(#26284cda, #393c7285);
+        border-radius: 20px;
+        transform-style: preserve-3d;
+        transition: 0.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;   
+    }
+    
+    .card-front p {
+        font-weight: bold;
+        padding: 0px 5px;
+    }
+    
+    .card-back {
+        backface-visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: rotateY(180deg);
+        
+        border-radius: 20px;
+        box-shadow: #4c53bd 0px 0px 8px;
+        background: linear-gradient(#26284cda, #393c7285);
+        transform-style: preserve-3d;
+        transition: 0.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        
+    }
+    
+    .cartas:hover > .card-front{
+        transform: rotateY(-180deg);
+    }
+    
+    .cartas:hover > .card-back{
+        transform: rotateY(0deg);
+    }
+    
+    .contacto {
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .formulario {
+        width: 70%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .info-contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 5px 0px;
+    
+    }
+    
+    .info-contacto input {
+        width: 20vw;
+        height: 3vh;
+        font-weight:bolder;
+        padding: 0px 10px;
+    }
+    
+    
+    #formulario-contacto {
+        padding: 0px 20px;
+        margin: 10px 0px;
+        width: 90%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    
+    #mensaje {
+        margin-top: 10px;
+        padding-bottom: 30%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:bolder;
+        color: black;
+    }
+    
+    #submit {
+      padding: 20px 30px;
+      background-color:var(--primary-color);
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      margin-top: 30px;
+      cursor: pointer;
+      box-shadow: 1px 3px 11px 5px rgba(188,218,55, .2);
+      font-size: 15px;
+    }
+    
+    .formulario h1 {
+        font-size: 40px;
+        color: var(--primary-color);
+    }
+    
+    .info-personal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        width: 100%;
+        color: var(--primary-color);
+    }
+    
+    .info-personal h1 {
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    .info-personal h4 {
+        text-align: center;
+    }
+    
+    .redes-personales {
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    
+    .redes-personales img {
+        width: 90px;
+        height: 90px;
+        transition: transform 0.3s, filter 0.3s;
+    }
+    
+    .redes-personales img:hover {
+        transform: scale(1.1);
+    }
+    
 }
+
 
 /* Estilos Pc de escritorio */
 
