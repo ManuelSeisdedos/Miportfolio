@@ -146,13 +146,16 @@
   <section class="contacto">
     <div class="formulario">
       <h1>Contactame</h1>
-        <form id="formulario-contacto">
+        <form
+          action="https://formsubmit.co/seisdedosmanuel2@gmail.com"
+          method="post" 
+          id="formulario-contacto">
           <div class="info-contacto">
-            <input type="text" id="nombre" required placeholder="Nombre">
-            <input type="text" id="apellido" required placeholder="Apellido">
+            <input type="text" id="nombre" name="name" required placeholder="Nombre">
+            <input type="email" name= "email" id="apellido" required placeholder="Email">
           </div>
-        <input type="text" id="mensaje">
-        <input type="submit" value="Enviar" id="submit">
+        <input type="text" name="messagge" id="mensaje" required>
+        <input type="submit" value="Enviar" id="submit" required>
     </form>
     </div>
     <div class="info-personal">
